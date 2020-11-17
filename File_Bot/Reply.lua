@@ -1,18 +1,28 @@
 local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
+if text == 'مطور السورس' then
+TextReply = '[--> 𝓜𝓡 𝓢𝓞𝓞𝓞𝓕𝓘 <--](t.me/s00f4)'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'مطور دراكون' then
+TextReply = '[--> 𝐌𝐔𝐍𝐓𝐀𝐃𝐇𝐄𝐑 <--](t.me/mndze)'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
 if text == 'هلو' then
-TextReply = 'هلاوات يكلبي نورت/ي'
+TextReply = 'هلاوات يكلبي نورت'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شلونكم' then
-TextReply = 'تمام ونت شونك/ج شخبارك/ج'
+TextReply = 'تمام ونت شونك شخبارك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شلونك' then
-TextReply = 'تمام ونته/ي عمريي'
+TextReply = 'تمام ونته عمريي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -72,12 +82,12 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اكرهك' then
-TextReply = 'عساس اني احبك/ج امشي الك'
+TextReply = 'عساس اني احبك امشي الك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'احبك' then
-TextReply = 'يحياتي واني هم احبك/ج'
+TextReply = 'يحياتي واني هم احبك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -262,7 +272,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'فديت' then
-TextReply = 'فداك/ج ثولان الكروب'
+TextReply = 'فداك ثولان الكروب'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
