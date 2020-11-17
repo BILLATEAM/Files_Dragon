@@ -7,7 +7,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'مطور دراكون' then
-TextReply = '[--> 𝐌𝐔𝐍𝐓𝐀𝐃𝐇𝐄𝐑 <--](t.me/mndze)'
+TextReply = '[--> 𝐌𝐔𝐍𝐓𝐀𝐃𝐇𝐄𝐑 <--](t.me/mndzr)'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
