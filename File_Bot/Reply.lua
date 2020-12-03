@@ -11,7 +11,7 @@ TextReply = '[--> 𝐌𝐔𝐍𝐓𝐀𝐃𝐇𝐄𝐑 <--](t.me/mndzr)'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'صوفي' then
+if text == 'منو المطور' or text == 'منو مطور' then
 TextReply = '[--> 𝓜𝓡 𝓢𝓞𝓞𝓞𝓕𝓘 <--](t.me/s00f4) حبيبي هذا مطور السورس '
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
